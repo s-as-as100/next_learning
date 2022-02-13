@@ -27,6 +27,15 @@ export default function Home() {
         <ul style={styles.ulList}>
           {/* multiple classname */}
           <li  className={`${styles.bn} ,${styles.mj}`}></li>
+          <style jsx>
+            {
+              `
+              h1{
+                color:pink
+              }
+              `
+            }
+          </style>
           <Link href="/">
             <a> Home </a>
           </Link>
@@ -46,9 +55,19 @@ export default function Home() {
             }}
           >
             <a> Product</a>
+
           </Link>
         </ul>
       </nav>
+
+      <div>
+        <Image 
+        width="200"
+        height="200"
+        src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80">
+
+        </Image>
+      </div>
     </>
   );
 }
