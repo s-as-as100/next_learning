@@ -8,41 +8,41 @@ import Link from "next/link";
 // index. js file  is component same imported in app .js
 
 export default function Home() {
-const  styles = {
-  navcont : {
-    display:"flex",
-    backgroundColor:"red",
+  const styles = {
+    navcont: {
+      display: "flex",
+      backgroundColor: "red",
+    },
 
-     
-  },
-
-  ulList: { 
-    display:"flex",
-    width:"100%",
-    justifyContent:"space-between"
-  }
-}
-
+    ulList: {
+      display: "flex",
+      width: "100%",
+      justifyContent: "space-between",
+    },
+  };
 
   return (
     <>
-      <nav  style={styles.navcont}>
-        <ul  style={styles.ulList}>
+      <nav style={styles.navcont}>
+        <ul style={styles.ulList}>
           <Link href="/">
-            <a > Home </a>
+            <a> Home </a>
           </Link>
           <Link href="/About">
             <a> About</a>
           </Link>
           <Link href="/Contact">
-            <a>Contact</a> 
+            <a>Contact</a>
           </Link>
-          <Link href="/blog" >
+          <Link href="/blog">
             <a>Blog</a>
           </Link>
-          <Link href="/Product" style={{
-            marginRight:"20px"
-          }}>
+          <Link
+            href="/Product"
+            style={{
+              marginRight: "20px",
+            }}
+          >
             <a> Product</a>
           </Link>
         </ul>
